@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#26215c"/>
+<g fill="none" stroke="#7f77dd" stroke-width="2">
+  <path d="M470 330 L600 230 L730 330 Z"/><rect x="490" y="330" width="220" height="110"/>
+  <line x1="520" y1="345" x2="520" y2="430"/><line x1="560" y1="345" x2="560" y2="430"/>
+  <line x1="600" y1="345" x2="600" y2="430"/><line x1="640" y1="345" x2="640" y2="430"/><line x1="680" y1="345" x2="680" y2="430"/>
+</g>
+<circle cx="680" cy="110" r="60" fill="#7f77dd"/><circle cx="610" cy="150" r="22" fill="#afa9ec"/>
+<text x="60" y="150" font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#afa9ec" letter-spacing="4">ISM</text>
+<text x="60" y="215" font-family="Arial, sans-serif" font-weight="700" font-size="58" fill="#eeedfe">Дижитал музей</text>
+<text x="60" y="265" font-family="Arial, sans-serif" font-size="24" fill="#cecbf6">Тэнхимийн түүх · багш нар · бүтээлүүд</text>
+<rect x="60" y="300" width="150" height="8" rx="4" fill="#7f77dd"/>
+</svg>
