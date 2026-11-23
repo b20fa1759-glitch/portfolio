@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Бат-Амгалан Тэмүгэ — Портфолио</title>
+  <meta name="description" content="Бат-Амгалан Тэмүгэгийн портфолио — бөмбөлгүүдийг чирж, шидэж үзээрэй." />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts: Unbounded (round, bubbly headings) + Manrope (body). Both support Cyrillic. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top-right controls: sound + dark/light mode -->
+  <div class="controls">
+    <button id="soundBtn" class="icon-btn" aria-label="Дуу унтраах" title="Дуу">🔊</button>
+    <button id="themeBtn" class="icon-btn" aria-label="Харанхуй горим" title="Харанхуй / цайвар">🌙</button>
+  </div>
+
+  <main class="layout">
+    <!-- 1. INTRO: name, direction, one sentence (filled from CONFIG in script.js) -->
+    <header class="intro">
+      <p class="hello" id="hello">Сайн байна уу?</p>
+      <h1 id="name">Нэр</h1>
+      <p id="role" class="role"></p>
+      <p id="tagline" class="tagline"></p>
+
+      <!-- Plain navigation: same panels as the bubbles, for people who don't want to play -->
+      <nav class="quick-nav" aria-label="Хэсгүүд">
+        <button data-open="about">Миний тухай</button>
+        <button data-open="skills">Ур чадвар</button>
+        <button data-open="projects">Бүтээлүүд</button>
+        <button data-open="contact">Холбогдох</button>
+      </nav>
+
+      <p class="hint"><span class="hint-dot"></span> Бөмбөлгүүдийг чирж шидээрэй · дарвал нээгдэнэ</p>
+    </header>
+
+    <!-- 2. STAGE: the bubbles live here. script.js creates them and runs the physics. -->
+    <section id="stage" class="stage" aria-label="Хөдөлгөөнт бөмбөлгүүд"></section>
+  </main>
+
+  <!-- 3. PANEL: opens when a bubble is clicked. Content is injected by script.js -->
+  <div id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle" hidden>
+    <div class="panel-inner">
+      <button id="closeBtn" class="close-btn" aria-label="Хаах">✕</button>
+      <div id="panelContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
